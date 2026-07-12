@@ -1,3 +1,20 @@
+/*
+Enter max lines: 4
+
+*
+**
+***
+****
+
+Enter max lines: 6
+
+*
+**
+***
+****
+*****
+******
+*/
 #include <stdio.h>
 int main()
 {
