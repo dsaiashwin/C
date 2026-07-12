@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    float a=0,b=0,c=0,avg=0;
+    scanf("%f %f %f",&a,&b,&c);
+    a=a+b+c;
+    avg=a/3;
+    printf("%f",avg);
+}
