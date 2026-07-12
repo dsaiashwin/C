@@ -1,0 +1,31 @@
+/*
+Enter n : 9
+
+Enter m : 3
+
+$$$***$$$
+*/
+#include <stdio.h>
+int main()
+{
+    int n,m,t,i;
+    scanf("%d %d",&n,&m);
+    
+    if (n%2 !=0 && m%2!=0)
+    {
+        t=(n-m)/2;
+        for (i=1;i<=t;i++)
+        {
+            printf("$");
+        }
+        for (i=1;i<=m;i++)
+        {
+            printf("*");
+        }
+        for (i=1;i<=t;i++)
+        {
+            printf("$");
+        }
+        
+    }
+}
