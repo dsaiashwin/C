@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    char c;
+    scanf("%c",&c);
+    
+    if (c >= 'A' && c <= 'Z')
+    printf("The character is Upper Case.");
+    
+    else if (c >='a' && c <= 'z')
+    printf("The character is Lower Case.");
+    
+    
+    else if (c >= '0' && c<= '9')
+    printf("The character is Digit.");
+    
+    else
+    printf("The character not an alphabet or digit.");
+}
