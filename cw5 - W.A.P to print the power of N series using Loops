@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int b,e,r,res=1;
+    scanf("%d",&b);
+    scanf("%d",&e);
+    e+=1;
+    printf("1 ");
+    for (r=1;r<e;r++)
+    {   
+        res=b*res;
+        
+        printf("%d ",res);
+    }
+}
