@@ -1,0 +1,65 @@
+/*
+Enter n value: 3
+
+           *
+
+        * * *
+
+     * * * * * 
+
+       * * *
+
+         *
+*/
+#include <stdio.h>
+int main()
+{
+    int n,r,c,space;
+    scanf("%d",&n);
+    
+    for(r = 1;r <= n;r++)
+    {
+        for (space=0;space < (n-r) ;space++)
+        {
+            printf(" ");
+            
+        }
+        for (c=1; c<=((2*r)-1) ; c++)
+        {
+                printf("*");
+        }
+            printf("\n");
+    }
+    
+    
+    for(r = 1;r <= n-1;r++)
+    {
+        for (space=0;space < r ;space++)
+        {
+            printf(" ");
+            
+        }
+        for (c=1; c<=(2*(n-r)-1) ; c++)
+        {
+                printf("*");
+        }
+            printf("\n");
+    }
+    
+}
+
+
+/*
+if n=3
+     cols
+rows   1    2   3   4   5
+  1             *
+ 
+  2         *   *   *
+ 
+  3     *   *   *   *   *
+  
+  4         *   *   *
+ 
+  5             *
+ */
