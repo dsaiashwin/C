@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+{
+    float principal,roe,timep,si;
+    scanf("%f %f %f",&principal,&roe,&timep);
+    si=(principal*roe*timep)/100;
+    printf("%g",si);
+}
