@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+    int n1,n2,r;
+    char a;
+    
+    scanf ("%d %c %d",&n1,&a,&n2);
+    
+    switch (a)
+    {
+        case '+':
+        r= n1+n2;
+        printf("%d",r);
+        break;
+        
+        case '-':
+        r= n1-n2;
+        printf("%d",r);
+        break;
+        
+        case '*':
+        r= n1*n2;
+        printf("%d",r);
+        break;
+        
+        case '/':
+        r= n1/n2;
+        printf("%d",r);
+        break;
+        
+        default:
+        printf("Invalid operation!");
+        break;
+    }
+    return 0;
+}
