@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int t;
+    //printf("Enter the hour (0-23):");
+    scanf("%d",&t);
+    if (t >= 5 && t <= 11)
+        printf("Good morning!");
+        
+    else if (t >= 12 && t <= 15)
+        printf("Good afternoon!");
+        
+    else if (t >= 16 && t <= 21)
+        printf("Good evening!");
+        
+    else if (t >= 22 && t <= 23)
+        printf("Good night!");
+        
+    else if (t >= 0 && t <= 4)
+        printf("Good night!");
+        
+    else if (t >23) 
+        printf("Invalid hour!");
+}
