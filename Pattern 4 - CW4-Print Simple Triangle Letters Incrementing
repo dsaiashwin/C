@@ -1,0 +1,33 @@
+/*
+Enter max lines: 4
+
+A
+B C
+D E F
+G H I J
+
+Enter max lines: 6
+
+A
+B C
+D E F
+G H I J
+K L M N O
+P Q R S T U
+*/
+#include <stdio.h>
+int main()
+{
+    int i,j,num,v=65;
+    scanf("%d",&num);
+    
+    for (i=1;i<=num;i++)
+    {
+        for(j=1; j <= i;j++)
+        {
+            printf("%c ",v);
+            v+=1;
+        }
+        printf("\n");
+    }
+}
