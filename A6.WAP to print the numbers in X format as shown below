@@ -1,0 +1,29 @@
+/*
+If n = 5, then,
+1___5
+_2_4_
+__3__
+_2_4_
+1___5
+Note:- Please consider '_' as space. 
+*/
+#include <stdio.h>
+int main()
+{
+    int n,row,col;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    
+    for (row = 1 ; row <= n; row++)
+    {
+        for (col = 1 ; col <= n; col++ )
+        {
+            if (row==col || (row+col) == (n+1))
+            printf("%d",col);
+            
+            else
+            printf(" ");
+        }
+        printf("\n");    
+    }   
+}
