@@ -1,0 +1,18 @@
+#include <stdio.h>
+float fahren_cels(float f);
+
+int main()
+{
+    float f,res;
+    scanf("%f",&f);
+    res=fahren_cels(f);
+    printf("Degree Celsius %f",res);
+
+}
+float fahren_cels(float f)
+{
+    float c;
+    
+    c= (((float)5/9)*(f-32));
+    return c;
+}
