@@ -1,0 +1,36 @@
+/*
+If n = 5, then,
+5
+4 5
+3 4 5
+2 3 4 5
+1 2 3 4 5
+2 3 4 5
+3 4 5
+4 5
+5
+*/
+#include <stdio.h>
+int main()
+{
+    int row,col,n;
+    scanf("%d",&n);
+    
+    for (row = n ; row >=1 ; row--)
+    {
+        for (col = row ; col <= n ; col++)
+        {
+            printf("%d ",col);
+        }
+        printf("\n");
+    }
+    
+    for (row = 2 ; row <= n ; row ++)
+    {
+        for (col = row ; col <= n ; col++)
+        {printf("%d ",col);}
+        
+     printf("\n");
+    }
+   
+}
