@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main()
+
+{
+    int n,i,j;
+    
+    printf("Enter array size: ");
+    scanf("%d",&n);
+    
+    int arr[n],u_arr[n];
+    
+    printf("Enter array elements: ");
+    
+    for (i = 0; i < n ; i++ )
+    {
+        scanf("%d",&arr[i]);
+    }
+    
+    u_arr[0]=arr[0];
+    
+    printf("Unique array elements: ");
+    int unique_index=1;
+    
+    for(i = 1; i < n ; i++)
+    {int flag=0;
+        for (j = 0; j < unique_index ; j++)
+        {
+            if (arr[i] == u_arr[j])
+            {flag=1;
+            break;}
+        }
+        
+        if(flag==0)
+        {
+            u_arr[unique_index++]=arr[i];    
+        }
+        
+    }
+    
+    
+    for(i=0;i<unique_index;i++)
+    {
+        printf("%d ",u_arr[i]);
+        
+    }
+    
+}
