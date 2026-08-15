@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int s,i;
+    //printf("Enter the size: ");
+    
+    scanf("%d",&s);
+    
+    int arr[s],arr_cpy[s];
+    
+    for (i=0;i<s;i++)
+    {
+        scanf("%d",&arr[i]);
+        
+    }
+    
+    printf("Array1 elements: ");
+    for (i=0;i<s;i++)
+    {
+        
+        printf("%d ",arr[i]);
+    }
+    
+    printf("Array2 elements: ");
+    for (i=0;i<s;i++)
+    {
+        arr_cpy[i]=arr[i];
+        
+        printf("%d ",arr_cpy[i]);
+    }
+}
