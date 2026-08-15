@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdbool.h>
+bool even_odd(int num );
+
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    
+    if(even_odd( num))
+    printf("TRUE");
+    else
+    printf("FALSE");
+}
+
+bool even_odd(int num)
+{
+    if (num%2==0)
+    return true;
+    
+    else if (num%2 !=0)
+    return false;
+}
