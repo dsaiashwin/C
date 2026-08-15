@@ -1,0 +1,17 @@
+#include <stdio.h>
+int add_two_nums(int num1, int num2)
+{
+    int sum=0;
+    sum=num1+num2;
+    return sum;
+}
+
+int main()
+{
+    int num1,num2,sum;
+    printf("Enter num1 and num2 : ");
+    scanf("%d %d",&num1,&num2);
+    sum=add_two_nums(num1, num2);
+    printf("Sum of two numbers is %d",sum);
+}
+
