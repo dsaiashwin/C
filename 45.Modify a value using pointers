@@ -1,0 +1,18 @@
+#include <stdio.h>
+void mod(int*ptr);
+
+int main()
+{
+    int num;
+    
+    //printf("Enter the number : ");
+    scanf("%d",&num);
+    mod(&num);
+    printf("After modifying, num is %d",num);
+}
+
+void mod(int*ptr)
+{
+    *ptr=*ptr+5;
+    
+}
