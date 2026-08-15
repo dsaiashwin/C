@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+float num_avg(int n1, int n2,int n3)
+{
+    int sum;
+    float avg;
+    sum=(n1+n2+n3);
+    
+    avg=((float)sum)/3;
+    
+    return avg;
+}
+int main()
+{
+    int n1,n2,n3;
+    float avg;
+    scanf("%d %d %d",&n1,&n2,&n3);
+    
+    avg=num_avg(n1,n2,n3);
+    printf("Average is %g",avg);
+    return 0;
+}
