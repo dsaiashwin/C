@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+    int A,R,N,i,ap,gp;
+    float hp;
+    printf("Enter the First Number 'A': ");
+    scanf("%d",&A);
+    ap=A;
+    gp=A;
+    hp=A;
+    printf("Enter the Common Difference / Ratio 'R': ");
+    scanf("%d",&R);
+    printf("Enter the number of terms 'N': ");
+    scanf("%d",&N);
+    if (N >= 1)
+    {
+        printf("AP = %d, ",ap);
+        for (i = 1; i < N;i++)
+        {
+            ap=ap+R;
+         printf("%d, ",ap);
+        }
+    
+        printf("GP = %d, ",gp);
+        for(i = 1; i < N ; i++)
+        {
+            gp=gp*R;
+            printf("%d, ",gp);
+        }
+
+        printf("HP = %f, ",(float) 1/A);
+    
+        for(i = 1; i < N ; i++)
+        {   
+            hp=hp+R;
+
+            printf("%f ", 1/ (float) hp);
+        }
+    }
+    else
+    {
+        printf("Invalid input");
+    }
+}
