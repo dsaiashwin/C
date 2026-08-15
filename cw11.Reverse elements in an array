@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()
+{
+    int s,i,t=0;
+    
+    printf("Enter array size: ");
+    scanf("%d",&s);
+    int arr[s];
+    
+    printf("Enter array elements: ");
+    
+    for (i = 0; i < s; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("Elements before reversing:\n");
+    for (i = 0; i < s; i++)
+    {
+        printf("%d ",arr[i]);
+        
+        
+    }
+    
+    printf("Elements after reversing:\n");
+    for (i = 0; i < (s/2); i++)
+    {
+        t=arr[s-i-1];
+        arr[s-i-1]=arr[i];
+        arr[i]=t;
+    }
+
+    for (i = 0; i < s; i++)
+    {
+        printf("%d ",arr[i]);
+    }
+}
