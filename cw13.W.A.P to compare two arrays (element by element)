@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main()
+{
+    int s1,s2,i,j,c;
+    
+    printf("Enter the array1 size : ");
+    scanf("%d",&s1);
+    
+    printf("Enter the array2 size : ");
+    scanf("%d",&s2);
+    
+    int arr1[s1],arr2[s2];
+    
+    if (s1==s2)
+    {
+        printf("Enter the array1 elements : ");
+        for (i = 0 ; i < s1 ;i++)
+        {
+            scanf("%d",&arr1[i]);
+        }
+        printf("Enter the array2 elements : ");
+        for (i = 0 ; i < s1 ;i++)
+        {
+            scanf("%d",&arr2[i]);
+        }
+        
+        for (i = 0 ;i < s1 ; i++)
+        {c=0;
+            for (j = 0 ; j < s1 ;j++)
+            {
+                if (arr1[i] != arr2[j])
+                {
+                    c+=1;
+                }
+            }
+            if (c >=s1)
+            {
+                printf("Array elements are not equal.");
+                break;
+            }
+        }   
+        if (c < s1)
+        printf("Array elements are equal.");
+    }
+    else
+    printf("Invalid input");
+}
