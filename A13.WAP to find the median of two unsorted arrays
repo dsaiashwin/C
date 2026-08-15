@@ -1,0 +1,76 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,i,j,temp;
+    float median1,median2,median;
+    //printf("Enter the 'n' value for Array A: ");
+    scanf("%d",&a);
+    
+    //printf("Enter the 'n' value for Array B: ");
+    scanf("%d",&b);
+    
+    int arr1[a],arr2[b];
+    
+    //printf("Enter the elements one by one for Array A: ");
+    for (i = 0 ; i < a ; i++)
+    {
+        scanf("%d",&arr1[i]);
+    }
+    
+    //printf("Enter the elements one by one for Array B: ");
+    for (i = 0 ; i < b ; i++)
+    {
+        scanf("%d",&arr2[i]);
+    }
+    
+    for (i = 0 ; i < a ; i++)
+    {
+        for (j = i ; j < a ; j++)
+        {
+            if (arr1[i]> arr1[j])
+            {
+                temp=arr1[j];
+                arr1[j]=arr1[i];
+                arr1[i]=temp;
+            }
+        }
+    }
+    
+    for (i = 0 ; i < b ; i++)
+    {
+        for (j = i ; j < b ; j++)
+        {
+            if (arr2[i]> arr2[j])
+            {
+                temp=arr2[j];
+                arr2[j]=arr2[i];
+                arr2[i]=temp;
+            }
+        }
+    }
+    printf("Median of array1 : ");
+    if (a%2 == 0)
+    {
+        median1=((float)arr1[a/2] + arr1[(a/2)-1])/2;
+        printf("%g\n",median1);
+    }
+    else if (a%2 !=0)
+    {
+        median1=(arr1[a/2]);
+        printf("%g\n",median1);
+    }
+    printf("Median of array2 : ");
+    if (b%2 == 0)
+    {
+        median2=((float)arr2[b/2] + arr2[(b/2)-1])/2;
+        printf("%g\n",median2);
+    }
+        else if (b%2 !=0)
+    {
+        median2=(arr2[b/2]);
+        printf("%g\n",median2);
+    }
+    
+    median=(float)(median1+median2)/2;
+    printf("Median of both arrays : %g",median);
+}
