@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int mul_two_nums(int n1,int n2)
+{
+    int i;
+    for (i=1;i < n2; i++)
+    {
+        n1+=n1;
+    }
+    return n1;
+}
+
+int main()
+{
+    int n1,n2,res;
+    //printf("Enter Num1 and Num2 : ");
+    scanf("%d %d",&n1,&n2);
+    res= mul_two_nums( n1, n2);
+    printf("%d",res);
+    return 0;
+}
