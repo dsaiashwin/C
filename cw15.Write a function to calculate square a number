@@ -1,0 +1,16 @@
+#include <stdio.h>
+int square_cal(int num);
+
+int main()
+{
+    int num,res=0;
+    scanf("%d",&num);
+    res=square_cal(num);
+    printf("Square is %d",res);
+    
+}
+int square_cal(int num)
+{
+    num=num*num;
+    return num;
+}
