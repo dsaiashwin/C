@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int s,i,j;
+    
+    printf("enter the array size");
+    scanf("%d",&s);
+    
+    int arr[s];
+    
+    for (i=0;i<s;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for (j=0;j<s;j++)
+    {
+        printf("%d\n",arr[j]);
+    }
+    
+}
