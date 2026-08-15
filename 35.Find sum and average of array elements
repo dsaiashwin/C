@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int s,i,t;
+    float a;
+    
+    //printf("Enter the size of array");
+    scanf("%d",&s);
+    int arr[s];
+    //printf("Enter array elements: \n");
+    for (i=0;i<s;i++)
+    {   
+        scanf("%d",&arr[i]);
+    }
+    for (i=0;i<s;i++)
+    {
+        t+=arr[i];
+    }
+    printf("Sum:%d\n",t);
+    
+    
+        a=(float) t/s;
+        printf("Average:%f",a);
+    
+}
