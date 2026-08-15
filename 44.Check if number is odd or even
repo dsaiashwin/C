@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+char ev_od(int number)
+{
+    if (number % 2 ==0)
+    {
+        return 'e';
+    }
+    else
+    {
+        return 'o';
+    }
+}
+int main()
+{
+    int n;
+    char res;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    
+    res= ev_od(n);
+    
+    if (res == 'o')
+    {
+        printf("%d is odd",n);
+    }
+    else if (res == 'e')
+    {
+        printf("%d is even",n);
+    }
+    
+     
+}
