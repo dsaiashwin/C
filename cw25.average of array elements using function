@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void my_avg(int*a, int s);
+
+int main()
+{
+    int s;
+    printf("Enter the size : ");
+    scanf("%d",&s);
+    int arr[s];
+    printf("Enter the array elements : ");
+    for (int i = 0 ; i < s ; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    my_avg(arr,s);
+}
+
+void my_avg(int*array, int s)
+{
+    float avg,sum=0;
+    for (int i = 0 ; i < s ;i++)
+    {
+        sum+=array[i];
+    }
+    avg=sum/s;
+    printf("Average is %g",avg);
+}
