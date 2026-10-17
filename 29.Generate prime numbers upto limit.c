@@ -12,15 +12,16 @@ int main()
                 {
                     c+=1;
                 }
-            }   if (i > 2)
-                {
-                    if (c < 2 )
-                    printf("%d,",i);
-                }
-                else if (i <= 2)
-                {
-                    printf("%d,",i);
-                }
+            }   
+            if (i > 2)
+            {
+                if (c < 2 )
+                printf("%d,",i);
+            }
+            else if (i <= 2)
+            {
+                printf("%d,",i);
+            }
         }
     }   
 }
